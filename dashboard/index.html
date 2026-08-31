@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Recorded Document Intel · Racine County</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0b1220;--bg2:#0e1628;--panel:#111c33;--panel2:#15223d;
+  --border:#1e2c4a;--border2:#28395e;
+  --text:#dbe4f3;--muted:#5f7194;--muted2:#8b9cbd;
+  --blue:#4da3ff;--cyan:#39c6f2;--orange:#ffa63d;--red:#ff5c5c;
+  --green:#37e0a1;--yellow:#ffd23d;--purple:#c48aff;--pink:#ff7ab8;
+  --mono:'IBM Plex Mono',monospace;--sans:'Inter',sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13px;min-height:100vh}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:4px}
+::-webkit-scrollbar-track{background:transparent}
+
+/* ── TOP BAR ── */
+.topbar{background:var(--bg2);border-bottom:1px solid var(--border);padding:14px 20px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;position:sticky;top:0;z-index:50}
+.brand{font-weight:800;font-size:15px;white-space:nowrap}
+.brand span{color:var(--muted);font-weight:500}
+.topstats{display:flex;gap:28px;margin-left:auto;flex-wrap:wrap}
+.tstat{text-align:right}
+.tstat .v{font-family:var(--mono);font-weight:700;font-size:19px;line-height:1.1}
+.tstat .l{font-size:9px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-top:2px}
+.v.c-blue{color:var(--blue)}.v.c-orange{color:var(--orange)}.v.c-green{color:var(--green)}.v.c-white{color:var(--text)}
+
+/* ── CHIP ROW ── */
+.chiprow{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.chip{background:var(--panel);border:1px solid var(--border2);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:600;color:var(--muted2);cursor:pointer;transition:all .15s;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.chip:hover{border-color:var(--blue);color:var(--text)}
+.chip.active{background:rgba(77,163,255,.12);border-color:var(--blue);color:var(--blue)}
+.chip .cnt{font-family:var(--mono);font-size:11px;opacity:.8}
+.chip .dot{width:7px;height:7px;border-radius:50%}
+.dot.g{background:var(--green)}.dot.o{background:var(--orange)}
+
+/* ── LAYOUT ── */
+.layout{display:grid;grid-template-columns:230px 1fr 340px;min-height:calc(100vh - 110px)}
+@media(max-width:1100px){.layout{grid-template-columns:200px 1fr}.detail{display:none}}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.sidebar{display:none}}
+
+/* ── SIDEBAR ── */
+.sidebar{background:var(--bg2);border-right:1px solid var(--border);padding:16px 14px;overflow-y:auto}
+.sb-label{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:18px 0 8px}
+.sb-label:first-child{margin-top:0}
+.sb-search{width:100%;background:var(--panel);border:1px solid var(--border2);border-radius:6px;color:var(--text);padding:8px 10px;font-size:12px;font-family:var(--sans);outline:none}
+.sb-search:focus{border-color:var(--blue)}
+.sb-search::placeholder{color:var(--muted)}
+.dt-group{margin-bottom:4px}
+.dt-cat{display:flex;align-items:center;gap:7px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted2);margin:14px 0 6px}
+.dt-cat .sq{width:8px;height:8px;border-radius:2px}
+.sq-fc{background:var(--red)}.sq-tx{background:var(--yellow)}.sq-jd{background:var(--cyan)}.sq-pr{background:var(--purple)}
+.dt-item{display:flex;justify-content:space-between;align-items:center;padding:6px 8px;border-radius:5px;cursor:pointer;font-size:12px;color:var(--muted2);transition:all .12s}
+.dt-item:hover{background:var(--panel);color:var(--text)}
+.dt-item.on{background:var(--panel2);color:var(--text);font-weight:600}
+.dt-item .n{font-family:var(--mono);font-size:11px;color:var(--muted);background:var(--panel);padding:1px 7px;border-radius:10px}
+.dt-item.on .n{color:var(--blue)}
+select.sb-sel{width:100%;background:var(--panel);border:1px solid var(--border2);border-radius:6px;color:var(--text);padding:7px 8px;font-size:12px;outline:none}
+
+/* ── MAIN ── */
+.main{overflow-x:auto;background:var(--bg)}
+.main-head{display:flex;align-items:center;gap:12px;padding:12px 18px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.mh-count{font-size:12px;color:var(--muted2)}
+.mh-right{margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.btn{background:var(--panel);border:1px solid var(--border2);border-radius:6px;color:var(--text);padding:6px 13px;font-size:11px;font-weight:700;cursor:pointer;transition:all .15s;font-family:var(--sans)}
+.btn:hover{border-color:var(--blue);color:var(--blue)}
+.sortnote{font-size:11px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;min-width:760px}
+thead th{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;text-align:left;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0}
+tbody tr{border-bottom:1px solid var(--border);cursor:pointer;transition:background .1s}
+tbody tr:hover{background:var(--panel)}
+tbody tr.sel{background:var(--panel2)}
+td{padding:12px 14px;vertical-align:top}
+.rec-date{font-family:var(--mono);font-size:12px;white-space:nowrap}
+.badge-new{display:inline-block;font-size:8px;font-weight:800;letter-spacing:.08em;color:var(--green);margin-left:6px;vertical-align:middle}
+.badge-chg{display:inline-block;font-size:8px;font-weight:800;letter-spacing:.08em;color:var(--orange);margin-left:6px;vertical-align:middle}
+.dtype{font-weight:700;font-size:12.5px}
+.dt-foreclosure{color:var(--red)}.dt-tax_lien{color:var(--yellow)}.dt-judgment{color:var(--cyan)}.dt-probate{color:var(--purple)}
+.tag-active{display:inline-block;border:1px dashed var(--orange);color:var(--orange);border-radius:10px;font-size:8px;font-weight:800;padding:1px 7px;margin-left:7px;letter-spacing:.06em}
+.addr{font-weight:700;font-size:13px}
+.addr-sub{font-size:10px;color:var(--muted);margin-top:2px;text-transform:uppercase}
+.parties{font-size:11px;color:var(--muted2);text-transform:uppercase;line-height:1.5}
+.scorecell{font-family:var(--mono);font-weight:700;font-size:14px}
+.s-hi{color:var(--red)}.s-md{color:var(--orange)}.s-lo{color:var(--muted2)}
+.empty{padding:70px 20px;text-align:center;color:var(--muted)}
+.empty h3{color:var(--muted2);font-size:17px;margin-bottom:6px}
+
+/* ── DETAIL PANEL ── */
+.detail{background:var(--bg2);border-left:1px solid var(--border);padding:20px;overflow-y:auto}
+.det-empty{color:var(--muted);text-align:center;padding-top:80px;font-size:12.5px;line-height:1.6}
+.det-type{font-weight:800;font-size:16px;margin-bottom:2px}
+.det-doc{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:16px}
+.det-score{display:flex;align-items:baseline;gap:8px;background:var(--panel);border:1px solid var(--border2);border-radius:8px;padding:12px 16px;margin-bottom:16px}
+.det-score .big{font-family:var(--mono);font-size:30px;font-weight:700}
+.det-score .of{color:var(--muted);font-size:12px}
+.det-sec{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:16px 0 5px}
+.det-val{font-size:13px;line-height:1.5;word-break:break-word}
+.det-val.mono{font-family:var(--mono);font-size:12px}
+.det-flags{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.fl{font-size:10px;font-weight:600;border:1px solid var(--border2);background:var(--panel);color:var(--muted2);border-radius:4px;padding:2px 8px}
+.fl.hot{border-color:rgba(255,92,92,.5);color:var(--red);background:rgba(255,92,92,.08)}
+.fl.warm{border-color:rgba(255,166,61,.5);color:var(--orange);background:rgba(255,166,61,.08)}
+.det-link{display:inline-block;margin-top:14px;color:var(--blue);font-size:12px;font-weight:600;text-decoration:none}
+.det-link:hover{text-decoration:underline}
+.pagination{display:flex;justify-content:center;gap:6px;padding:16px}
+.pg{min-width:30px;height:30px;background:var(--panel);border:1px solid var(--border2);border-radius:5px;color:var(--muted2);font-family:var(--mono);font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 6px}
+.pg:hover,.pg.on{background:var(--blue);border-color:var(--blue);color:#04101f;font-weight:700}
+.pg:disabled{opacity:.3;pointer-events:none}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">Recorded Document Intel <span>· Racine County</span></div>
+  <div class="topstats">
+    <div class="tstat"><div class="v c-white" id="ts-total">—</div><div class="l">Documents</div></div>
+    <div class="tstat"><div class="v c-green" id="ts-new">—</div><div class="l">New (7d)</div></div>
+    <div class="tstat"><div class="v c-blue" id="ts-addr">—</div><div class="l">With Address</div></div>
+    <div class="tstat"><div class="v c-orange" id="ts-hi">—</div><div class="l">Score ≥ 70</div></div>
+    <div class="tstat"><div class="v c-white" style="font-size:13px;padding-top:4px" id="ts-range">—</div><div class="l">Date Range</div></div>
+  </div>
+</div>
+
+<div class="chiprow">
+  <div class="chip" data-quick="new"><span class="dot g"></span>New last 7d <span class="cnt" id="chip-new-n"></span></div>
+  <div class="chip" data-quick="fc">🔥 Active foreclosures <span class="cnt" id="chip-fc-n"></span></div>
+  <div class="chip" data-quick="probate">Probate <span class="cnt" id="chip-pr-n"></span></div>
+  <div class="chip" data-quick="absentee">Absentee owners <span class="cnt" id="chip-ab-n"></span></div>
+  <div class="chip" data-quick="hi">Score ≥ 70 <span class="cnt" id="chip-hi-n"></span></div>
+</div>
+
+<div class="layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-label">Search</div>
+    <input class="sb-search" id="q" placeholder="Owner, address, doc #…"/>
+
+    <div class="sb-label">Recorded Date</div>
+    <select class="sb-sel" id="f-days">
+      <option value="0">All dates</option>
+      <option value="1">Today</option>
+      <option value="3">Last 3 days</option>
+      <option value="7">Last 7 days</option>
+    </select>
+
+    <div class="sb-label">Status</div>
+    <select class="sb-sel" id="f-status">
+      <option value="">All documents</option>
+      <option value="NEW">New only</option>
+      <option value="CHANGED">Changed only</option>
+    </select>
+
+    <div class="sb-label">Document Type</div>
+    <div id="dt-list"></div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="main-head">
+      <span class="mh-count" id="mh-count">Loading…</span>
+      <div class="mh-right">
+        <button class="btn" onclick="dlCSV('skip')">Skip Trace CSV</button>
+        <button class="btn" onclick="dlCSV('ghl')">GHL CSV</button>
+        <span class="sortnote">sorted by first_seen ↓</span>
+      </div>
+    </div>
+    <table>
+      <thead><tr>
+        <th>Entered</th><th>Document Type</th><th>Property / Owner</th><th>Parties</th><th>Score</th>
+      </tr></thead>
+      <tbody id="tbody">
+        <tr><td colspan="5" class="empty"><h3>Loading…</h3></td></tr>
+      </tbody>
+    </table>
+    <div class="pagination" id="pag"></div>
+  </main>
+
+  <!-- DETAIL -->
+  <aside class="detail" id="detail">
+    <div class="det-empty">Select a document to see full detail and enrichment.</div>
+  </aside>
+</div>
+
+<script>
+let ALL=[],FILT=[],PAGE=1,SEL=null;
+const PS=50;
+const CAT_ORDER=[
+ ["foreclosure","FORECLOSURE","sq-fc"],
+ ["tax_lien","TAX & LIENS","sq-tx"],
+ ["judgment","JUDGMENTS","sq-jd"],
+ ["probate","PROBATE / ESTATE","sq-pr"],
+];
+let activeTypes=new Set(),quick=null;
+
+async function load(){
+  let d=null;
+  for(const p of ['records.json','../data/records.json']){
+    try{const r=await fetch(p+'?t='+Date.now());if(r.ok){d=await r.json();break}}catch(e){}
+  }
+  if(!d||!d.records){document.getElementById('tbody').innerHTML='<tr><td colspan="5" class="empty"><h3>No data yet</h3><p>Run the scraper workflow first.</p></td></tr>';return}
+  ALL=d.records||[];
+  setT('ts-total',d.total||ALL.length);
+  setT('ts-new',d.new_7d||0);
+  setT('ts-addr',d.with_address||0);
+  setT('ts-hi',ALL.filter(r=>(r.score||0)>=70).length);
+  const dr=d.date_range||{};
+  setT('ts-range',(dr.start||'')+' → '+(dr.end||''));
+  setT('chip-new-n',ALL.filter(r=>r.status==='NEW').length);
+  setT('chip-fc-n',ALL.filter(r=>r.cat==='foreclosure').length);
+  setT('chip-pr-n',ALL.filter(r=>r.cat==='probate').length);
+  setT('chip-ab-n',ALL.filter(r=>r.absentee).length);
+  setT('chip-hi-n',ALL.filter(r=>(r.score||0)>=70).length);
+  buildSidebar();apply();
+}
+function setT(id,v){const e=document.getElementById(id);if(e)e.textContent=v}
+
+function buildSidebar(){
+  const counts={};
+  ALL.forEach(r=>{const k=r.doc_type;counts[k]=counts[k]||{n:0,label:r.cat_label,cat:r.cat};counts[k].n++});
+  let html='';
+  for(const [cat,catLabel,sq] of CAT_ORDER){
+    const items=Object.entries(counts).filter(([k,v])=>v.cat===cat);
+    if(!items.length)continue;
+    html+=`<div class="dt-group"><div class="dt-cat"><span class="sq ${sq}"></span>${catLabel}</div>`;
+    items.sort((a,b)=>b[1].n-a[1].n);
+    for(const [code,v] of items){
+      html+=`<div class="dt-item" data-dt="${code}" onclick="toggleType('${code}',this)"><span>${v.label}</span><span class="n">${v.n}</span></div>`;
+    }
+    html+='</div>';
+  }
+  document.getElementById('dt-list').innerHTML=html;
+}
+
+function toggleType(code,el){
+  if(activeTypes.has(code)){activeTypes.delete(code);el.classList.remove('on')}
+  else{activeTypes.add(code);el.classList.add('on')}
+  apply();
+}
+
+document.querySelectorAll('.chip').forEach(c=>{
+  c.addEventListener('click',()=>{
+    const q=c.dataset.quick;
+    if(quick===q){quick=null;c.classList.remove('active')}
+    else{quick=q;document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));c.classList.add('active')}
+    apply();
+  });
+});
+['q','f-days','f-status'].forEach(id=>{
+  const e=document.getElementById(id);
+  e.addEventListener('input',apply);e.addEventListener('change',apply);
+});
+
+function apply(){
+  const q=document.getElementById('q').value.toLowerCase().trim();
+  const days=parseInt(document.getElementById('f-days').value)||0;
+  const status=document.getElementById('f-status').value;
+  const cutoff=days?new Date(Date.now()-days*864e5).toISOString().slice(0,10):null;
+
+  FILT=ALL.filter(r=>{
+    if(activeTypes.size&&!activeTypes.has(r.doc_type))return false;
+    if(status&&r.status!==status)return false;
+    if(cutoff&&(r.first_seen||'')<cutoff)return false;
+    if(quick==='new'&&r.status!=='NEW')return false;
+    if(quick==='fc'&&r.cat!=='foreclosure')return false;
+    if(quick==='probate'&&r.cat!=='probate')return false;
+    if(quick==='absentee'&&!r.absentee)return false;
+    if(quick==='hi'&&(r.score||0)<70)return false;
+    if(q){
+      const hay=[r.owner,r.grantee,r.prop_address,r.doc_num,r.legal].join(' ').toLowerCase();
+      if(!hay.includes(q))return false;
+    }
+    return true;
+  });
+  FILT.sort((a,b)=>(b.first_seen||'').localeCompare(a.first_seen||'')||((b.score||0)-(a.score||0)));
+  PAGE=1;render();
+}
+
+function render(){
+  const tb=document.getElementById('tbody');
+  document.getElementById('mh-count').textContent=`${FILT.length} documents`+(FILT.length>PS?` (page ${PAGE})`:'');
+  if(!FILT.length){tb.innerHTML='<tr><td colspan="5" class="empty"><h3>No results</h3></td></tr>';document.getElementById('pag').innerHTML='';return}
+  const start=(PAGE-1)*PS,slice=FILT.slice(start,start+PS);
+  tb.innerHTML=slice.map((r,i)=>row(r,start+i)).join('');
+  const pages=Math.ceil(FILT.length/PS);
+  let pg='';
+  if(pages>1){
+    pg+=`<button class="pg" onclick="go(${PAGE-1})" ${PAGE===1?'disabled':''}>‹</button>`;
+    for(let p=1;p<=pages;p++){if(p===1||p===pages||Math.abs(p-PAGE)<=2)pg+=`<button class="pg ${p===PAGE?'on':''}" onclick="go(${p})">${p}</button>`;else if(Math.abs(p-PAGE)===3)pg+='<span style="color:var(--muted)">…</span>'}
+    pg+=`<button class="pg" onclick="go(${PAGE+1})" ${PAGE===pages?'disabled':''}>›</button>`;
+  }
+  document.getElementById('pag').innerHTML=pg;
+}
+function go(p){PAGE=p;render();window.scrollTo({top:0,behavior:'smooth'})}
+
+function row(r,idx){
+  const badge=r.status==='NEW'?'<span class="badge-new">NEW</span>':r.status==='CHANGED'?'<span class="badge-chg">CHG</span>':'';
+  const active=(r.cat==='foreclosure'&&r.status!=='EXISTING')?'<span class="tag-active">ACTIVE</span>':'';
+  const sc=r.score||0,scls=sc>=70?'s-hi':sc>=50?'s-md':'s-lo';
+  const addr=r.prop_address?`<div class="addr">${esc(r.prop_address)}${r.prop_zip?' '+esc(r.prop_zip):''}</div><div class="addr-sub">${esc(r.owner)||''}</div>`:`<div class="addr">${esc(r.doc_num)||'—'}</div><div class="addr-sub">${esc(r.owner)||''}</div>`;
+  return `<tr onclick="showDetail(${idx},this)"><td class="rec-date">${r.first_seen||r.filed||'—'}${badge}</td><td><span class="dtype dt-${r.cat}">${esc(r.cat_label)}</span>${active}</td><td>${addr}</td><td class="parties">${esc([r.owner,r.grantee].filter(Boolean).join(', '))}</td><td class="scorecell ${scls}">${sc}</td></tr>`;
+}
+
+function showDetail(idx,tr){
+  document.querySelectorAll('tbody tr').forEach(t=>t.classList.remove('sel'));
+  if(tr)tr.classList.add('sel');
+  const r=FILT[idx];if(!r)return;
+  const sc=r.score||0,scls=sc>=70?'s-hi':sc>=50?'s-md':'s-lo';
+  const flags=(r.flags||[]).map(f=>{
+    const cls=['Lis pendens','Pre-foreclosure'].includes(f)?'hot':['Judgment lien','Tax lien','Probate / estate'].includes(f)?'warm':'';
+    return `<span class="fl ${cls}">${f}</span>`;
+  }).join('')||'<span class="fl">None</span>';
+  document.getElementById('detail').innerHTML=`
+    <div class="det-type dt-${r.cat}">${esc(r.cat_label)}</div>
+    <div class="det-doc">${esc(r.doc_num)||'—'} · filed ${r.filed||'—'} · entered ${r.first_seen||'—'} · ${r.status||''}</div>
+    <div class="det-score"><span class="big ${scls}">${sc}</span><span class="of">/ 100 seller score</span></div>
+    <div class="det-sec">Motivated Seller Flags</div>
+    <div class="det-flags">${flags}</div>
+    <div class="det-sec">Owner / Grantor</div><div class="det-val">${esc(r.owner)||'—'}</div>
+    <div class="det-sec">Grantee / Party</div><div class="det-val">${esc(r.grantee)||'—'}</div>
+    ${r.amount?`<div class="det-sec">Amount / Debt</div><div class="det-val mono">$${Number(r.amount).toLocaleString()}</div>`:''}
+    <div class="det-sec">Property Address</div><div class="det-val">${esc([r.prop_address,r.prop_city,r.prop_state,r.prop_zip].filter(Boolean).join(', '))||'—'}</div>
+    <div class="det-sec">Mailing Address</div><div class="det-val">${esc([r.mail_address,r.mail_city,r.mail_state,r.mail_zip].filter(Boolean).join(', '))||'—'}</div>
+    <div class="det-sec">Legal Description</div><div class="det-val" style="font-size:11px;color:var(--muted2)">${esc(r.legal)||'—'}</div>
+    ${r.clerk_url?`<a class="det-link" href="${esc(r.clerk_url)}" target="_blank" rel="noopener">View on Clerk Portal ↗</a>`:''}
+  `;
+}
+
+function dlCSV(kind){
+  const rows=[];
+  if(kind==='skip'){
+    rows.push(['First Name','Last Name','Mailing Address','Mailing City','Mailing State','Mailing Zip','Property Address','Property City','Property State','Property Zip'].join(','));
+    FILT.forEach(r=>{const[f,l]=nm(r.owner);rows.push([q(f),q(l),q(r.mail_address),q(r.mail_city),q(r.mail_state||'WI'),q(r.mail_zip),q(r.prop_address),q(r.prop_city),q(r.prop_state||'WI'),q(r.prop_zip)].join(','))});
+  }else{
+    rows.push(['First Name','Last Name','Mailing Address','Mailing City','Mailing State','Mailing Zip','Property Address','Property City','Property State','Property Zip','Lead Type','Document Type','Date Filed','Date Entered System','Document Number','Amount/Debt Owed','Seller Score','Motivated Seller Flags','Status','Source','Public Records URL'].join(','));
+    FILT.forEach(r=>{const[f,l]=nm(r.owner);rows.push([q(f),q(l),q(r.mail_address),q(r.mail_city),q(r.mail_state||'WI'),q(r.mail_zip),q(r.prop_address),q(r.prop_city),q(r.prop_state||'WI'),q(r.prop_zip),q(r.cat_label),q(r.doc_type),q(r.filed),q(r.first_seen),q(r.doc_num),r.amount?('$'+r.amount.toFixed(2)):'',r.score||0,q((r.flags||[]).join(' | ')),q(r.status),'Racine County Clerk',q(r.clerk_url)].join(','))});
+  }
+  const blob=new Blob([rows.join('\n')],{type:'text/csv'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download=`racine_${kind}_${new Date().toISOString().slice(0,10)}.csv`;a.click();
+}
+function nm(o){o=(o||'').trim();if(o.includes(',')){const p=o.split(',');return[p[1].trim(),p[0].trim()]}const p=o.split(' ');return[p[0]||'',p.slice(1).join(' ')]}
+function q(s){const v=String(s||'');return v.includes(',')?`"${v.replace(/"/g,'""')}"`:v}
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+load();
+</script>
+</body>
+</html>
