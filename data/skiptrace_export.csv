@@ -1,13 +1,58 @@
 First Name,Last Name,Mailing Address,Mailing City,Mailing State,Mailing Zip,Property Address,Property City,Property State,Property Zip
+Brenda,Lueck,432 GARFIELD STREET,Burlington,WI,53105,432 GARFIELD ST,,WI,
+Thomas C,Taskonis,501 Romayne Ave,Racine,WI,53402,501 Romayne Ave,Racine,WI,53402
+William,Schultz,1339 MEADOWLANE AVE,Racine,WI,53406,1339 MEADOWLANE AVE,Racine,WI,53406
+Christopher,C Brown,5725 E PENINSULA DR,Waterford,WI,53185,5725 PENINSULA DR E,,WI,
+Summer,E Swain,,,WI,,,,WI,
+Justin,R. Oswalt,,,WI,,,,WI,
+Alyssa,Straka,,,WI,,,,WI,
+Alisha,Weinreber,,,WI,,,,WI,
+Edward,Domalik,,,WI,,,,WI,
+Fifth,Street Transport Llc,,,WI,,,,WI,
+Tevin,Riley,,,WI,,,,WI,
+Mystique,M Davis,,,WI,,,,WI,
 Samuel Allen,Donohue,2814 LAKESHORE DR,Kansasville,WI,53139,2418 LAKESHORE DR,,WI,
 Dontavious,Gray,1305 Walton Ave,Racine,WI,53402,1305 Walton Ave,Racine,WI,53402
 Kimberly,M Mann,1418 GROVES LN,Union Grove,WI,53182,1418 GROVES LN,Union Grove,WI,53182
 Llc,Carbon Properties,30725 DURAND AVE,Burlington,WI,53105,30725 DURAND AVE,Burlington,WI,53105
+Cynthia,Conrad,95 WOODFIELD CT,Wind Point,WI,53402,95 WOODFIELD CT,Wind Point,WI,53402
+Darlene Joy,Frederick,918 Oregon St,Racine,WI,53405,918 Oregon St,Racine,WI,53405
+Brandon Michael Caleb,White,2207 Romayne Ave,Racine,WI,53404,2207 Romayne Ave,Racine,WI,53404
+Cheryl,Patterson,1624 Taylor Ave,Racine,WI,53403,1624 Taylor Ave,Racine,WI,53403
+Nancy A.,Feiner,612 FOX RUN LANE,Mt. Pleasant,WI,53406,612 FOX RUN LN,,WI,
+Linda Ann,Lewis,3323 Hamlin St,Racine,WI,53403,3323 Hamlin St,Racine,WI,53403
+Mary M.,Boyle,3023 SOUTHWOOD DR,Racine,WI,53406,3023 SOUTHWOOD DR,Racine,WI,53406
+"John T., Sr.",Paleka,353 SETTLEMENT DR,Burlington,WI,53105,353 SETTLEMENT DR,Burlington,WI,53105
+Vasil,Stoilkov,"4909 SCOTTS WAY, UNIT 202",Racine,WI,53402,4909 SCOTTS WAY 202,,WI,
+Sean Gregory,Albrecht,2315 BROADLEAF DRIVE,Caledonia,WI,53402,2315 BROADLEAF DR,,WI,
+Derrick Deion,Oates,10759 W Cinnebar Ave,Sun City,AZ,85351,1206 Frederick St,,WI,
+Karen,Blaisdell,3662 Carter St,Racine,WI,53402,3662 Carter St,Racine,WI,53402
+George A,Hettrick,2853 108TH ST,Franksville,WI,53126,2853 108TH ST,Franksville,WI,53126
+Laura J.,Harder,3361 N. ELMWOOD DRIVE,Elmwood Park,WI,53405,3361 ELMWOOD DR N,,WI,
+John A.,Vash,"3128 WOOD RD, #16",Mt Pleasant,WI,53406,3128 WOOD RD 16,,WI,
+Robert H,Townsend,1004 Lockwood Ave,Racine,WI,53403,1004 Lockwood Ave,Racine,WI,53403
+Rebecca,Lemke,2877 WAUKESHA RD,Franksville,WI,53126,2877 WAUKESHA RD,Franksville,WI,53126
+Alfred J,Hermann,1926 Prospect St,Racine,WI,53404,1926 Prospect St,Racine,WI,53404
+Nellie B.,Williams,1922 Neptune Ave,Racine,WI,53404,1922 Neptune Ave,Racine,WI,53404
+Gary F,Mueller,2986 STAR LAKE RD,Eagle River,WI,54521,29308 DURAND AVE,,WI,
+William,Markus,815 Saxony Dr,Racine,WI,53402,815 Saxony Dr,Racine,WI,53402
+Kenneth E.,Cramer,133 S PINE ST,Burlington,WI,53105,32450 YAHNKE RD,,WI,
+Katie A.,Walker,4950 SAINT REGIS DR,Mt Pleasant,WI,53403,4950 ST REGIS DR,,WI,
+Floraine,Clarke,1732 Flett Ave,Racine,WI,53405,1732 Flett Ave,Racine,WI,53405
+Daniel Lee,Bishop,17235 TWO MILE ROAD,Franksville,WI,53126,17235 2 MILE RD,,WI,
+Darlene,Daines,13010 4 MILE RD,Franksville,WI,53126,13010 4 MILE RD,Franksville,WI,53126
 Cindy Marie,Boedecker,2905 Westlawn Ave,Racine,WI,53405,,,WI,
+James,Williams,1948 Phillips Ave,Racine,WI,53403,,,WI,
+Carol Anne,Rudey,,,WI,,,,WI,
+Cynthia Louise,Nicholson,,,WI,,,,WI,
 Llc,Cardinal Capital Construction,,,WI,,,,WI,
 Aimee,Hooper,,,WI,,,,WI,
 Robert,Riendeau,,,WI,,,,WI,
 Angelica,Martinez,,,WI,,,,WI,
+Curtisey,K Liggins,,,WI,,,,WI,
+Anthony,Walker,,,WI,,,,WI,
+Joshua,Placencia,,,WI,,,,WI,
+Derris,R Morales,,,WI,,,,WI,
 Ramon,Alvarado Jr,,,WI,,,,WI,
 Elizabeth,R Maney,,,WI,,,,WI,
 Inc.,Headlines Hair Design Studio,,,WI,,,,WI,
@@ -34,45 +79,6 @@ D,Cain Enterprises Inc,,,WI,,,,WI,
 No,Limit Cleaning Service Inc,,,WI,,,,WI,
 Rep,General Contracting Llc,,,WI,,,,WI,
 Sleepy,Lounge Llc,,,WI,,,,WI,
-Cynthia,Conrad,95 WOODFIELD CT,Wind Point,WI,53402,95 WOODFIELD CT,Wind Point,WI,53402
-Darlene Joy,Frederick,918 Oregon St,Racine,WI,53405,918 Oregon St,Racine,WI,53405
-Brandon Michael Caleb,White,2207 Romayne Ave,Racine,WI,53404,2207 Romayne Ave,Racine,WI,53404
-Cheryl,Patterson,1624 Taylor Ave,Racine,WI,53403,1624 Taylor Ave,Racine,WI,53403
-Nancy A.,Feiner,612 FOX RUN LANE,Mt. Pleasant,WI,53406,612 FOX RUN LN,,WI,
-Linda Ann,Lewis,3323 Hamlin St,Racine,WI,53403,3323 Hamlin St,Racine,WI,53403
-Mary M.,Boyle,3023 SOUTHWOOD DR,Racine,WI,53406,3023 SOUTHWOOD DR,Racine,WI,53406
-"John T., Sr.",Paleka,353 SETTLEMENT DR,Burlington,WI,53105,353 SETTLEMENT DR,Burlington,WI,53105
-Vasil,Stoilkov,"4909 SCOTTS WAY, UNIT 202",Racine,WI,53402,4909 SCOTTS WAY 202,,WI,
-Sean Gregory,Albrecht,2315 BROADLEAF DRIVE,Caledonia,WI,53402,2315 BROADLEAF DR,,WI,
-Derrick Deion,Oates,10759 W Cinnebar Ave,Sun City,AZ,85351,1206 Frederick St,,WI,
-Karen,Blaisdell,3662 Carter St,Racine,WI,53402,3662 Carter St,Racine,WI,53402
-George A,Hettrick,2853 108TH ST,Franksville,WI,53126,2853 108TH ST,Franksville,WI,53126
-Laura J.,Harder,3361 N. ELMWOOD DRIVE,Elmwood Park,WI,53405,3361 ELMWOOD DR N,,WI,
-John A.,Vash,"3128 WOOD RD, #16",Mt Pleasant,WI,53406,3128 WOOD RD 16,,WI,
-Robert H,Townsend,1004 Lockwood Ave,Racine,WI,53403,1004 Lockwood Ave,Racine,WI,53403
-Rebecca,Lemke,2877 WAUKESHA RD,Franksville,WI,53126,2877 WAUKESHA RD,Franksville,WI,53126
-Alfred J,Hermann,1926 Prospect St,Racine,WI,53404,1926 Prospect St,Racine,WI,53404
-Nellie B.,Williams,1922 Neptune Ave,Racine,WI,53404,1922 Neptune Ave,Racine,WI,53404
-Gary F,Mueller,2986 STAR LAKE RD,Eagle River,WI,54521,29308 DURAND AVE,,WI,
-William,Markus,815 Saxony Dr,Racine,WI,53402,815 Saxony Dr,Racine,WI,53402
-Kenneth E.,Cramer,133 S PINE ST,Burlington,WI,53105,32450 YAHNKE RD,,WI,
-Katie A.,Walker,4950 SAINT REGIS DR,Mt Pleasant,WI,53403,4950 ST REGIS DR,,WI,
-Floraine,Clarke,1732 Flett Ave,Racine,WI,53405,1732 Flett Ave,Racine,WI,53405
-Darrell R,Baetje,,,WI,,,,WI,
-Gustafson David,M,,,WI,,,,WI,
-Daniel Lee,Bishop,17235 TWO MILE RD,Franksville,WI,53126,17235 2 MILE RD,,WI,
-Darlene,Daines,13010 4 MILE RD,Franksville,WI,53126,13010 4 MILE RD,Franksville,WI,53126
-James,Williams,611 MAPLE TREE DR,Waterford,WI,53185,,,WI,
-Carol Anne,Rudey,,,WI,,,,WI,
-Cynthia Louise,Nicholson,,,WI,,,,WI,
-Curtisey,K Liggins,,,WI,,,,WI,
-Anthony,Walker,,,WI,,,,WI,
-Joshua,Placencia,,,WI,,,,WI,
-Derris,R Morales,,,WI,,,,WI,
-Amanda,Manke,,,WI,,,,WI,
-Llc,Westlake Services,,,WI,,,,WI,
-Matthew,G Albritton,,,WI,,,,WI,
-Eric,Britt,,,WI,,,,WI,
 First,Class Home Care Llc,,,WI,,,,WI,
 Mtz,Mufflers L.L.C.,1501 Goold St,Racine,WI,53402,,,WI,
 Life,Warriors Llc,,,WI,,,,WI,
@@ -98,10 +104,8 @@ Dawn,Smith,,,WI,,,,WI,
 Ghsb,Llc,,,WI,,,,WI,
 Schulz,& Dillon,,,WI,,,,WI,
 Donald,Larsen,,,WI,,,,WI,
-Rebecca,A. Brown,3652 Carter St,Racine,WI,53402,3652 Carter St,Racine,WI,53402
-Jaquar,Davis,4622 OAKDALE DR,Racine,WI,53405,4622 OAKDALE DR,Racine,WI,53405
 Corwin R.,Wheeler,,,WI,,,,WI,
-Jane A,Aylward,7900 W LAKESHORE DR,Burlington,WI,53105,,,WI,
+Jane A,Aylward,7900 W LAKE SHORE DR,Burlington,WI,53105,,,WI,
 Tyler R,Aukland,,,WI,,,,WI,
 John Paul,Thomas,934 Wilson St,Racine,WI,53404,,,WI,
 Rudolf M.,Peterson,,,WI,,,,WI,
@@ -126,18 +130,20 @@ Sue A.,Farthing,,,WI,,,,WI,
 Thomas,Hansen,3032 96TH ST,Franksville,WI,53126,,,WI,
 Tyler M,Eppers,,,WI,,,,WI,
 Walter Stephen,Goodland,,,WI,,,,WI,
-Jane L,Wilson,1614 EMMERTSEN RD,Mt Pleasant,WI,53406,,,WI,
+Jane L,Wilson,3132 Debra Ln,Racine,WI,53403,,,WI,
 Ann L,Schemel,,,WI,,,,WI,
 Karen E,Keown,,,WI,,,,WI,
 Karma,Najdowski,,,WI,,,,WI,
 Nathan,Henry,,,WI,,,,WI,
 Robert A.,Mckillop,,,WI,,,,WI,
 Damian John,Vaughn,,,WI,,,,WI,
+Darrell R,Baetje,,,WI,,,,WI,
+Gustafson David,M,,,WI,,,,WI,
 Eric,Lidholm,,,WI,,,,WI,
 Eveleth,Ibendahl,,,WI,,,,WI,
 Kate Renee,Kempf,,,WI,,,,WI,
 Paulette M,Hill,,,WI,,,,WI,
-Karen,Guajardo,,,WI,,,,WI,
-Maureen,Rose Nixon,,,WI,,,,WI,
-Delancy,A Mullen,,,WI,,,,WI,
-Raymond,Richardson Iii,19719 WASHINGTON AVE,Union Grove,WI,53182,,,WI,
+Amanda,Manke,,,WI,,,,WI,
+Llc,Westlake Services,,,WI,,,,WI,
+Matthew,G Albritton,,,WI,,,,WI,
+Eric,Britt,,,WI,,,,WI,
