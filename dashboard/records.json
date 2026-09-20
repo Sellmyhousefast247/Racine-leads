@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-09-19T13:27:54.083330",
+  "fetched_at": "2026-09-20T13:27:09.809984",
   "county": "Racine",
   "source": "Racine County, WI -- WCCA Courts + Sheriff Sales + Parcel API",
   "date_range": {
-    "start": "2026-09-12",
-    "end": "2026-09-19"
+    "start": "2026-09-13",
+    "end": "2026-09-20"
   },
   "total": 0,
   "new_7d": 0,
